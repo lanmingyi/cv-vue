@@ -1,0 +1,18 @@
+{
+  "result": {
+    "desScreenItemJson": "[\n  {\n    \"title\": \"文本图\",\n    \"name\": \"文本图\",\n    \"icon\": \"icon-wenben\",\n    \"data\": \"某某某集团财务大数据看板\",\n    \"component\": {\n      \"width\": 1016.3,\n      \"height\": 50,\n      \"option\": {\n        \"textAlign\": \"center\",\n        \"fontSize\": 35,\n        \"fontWeight\": \"normal\",\n        \"color\": \"#fff\",\n        \"split\": 1\n      },\n      \"name\": \"text\",\n      \"prop\": \"text\"\n    },\n    \"left\": 403.48,\n    \"top\": 26.18,\n    \"zIndex\": 1,\n    \"index\": 1\n  }\n]",
+    "desScreenMainJson": "{\n  \"width\": 1920,\n  \"height\": 1080,\n  \"scale\": 65.10416666666666,\n  \"mark\": {\n    \"show\": false,\n    \"text\": \"大屏报表\",\n    \"fontSize\": 20,\n    \"textStyle\": \"rgba(100,100,100,0.2)\",\n    \"degree\": -20\n  },\n  \"backgroundImage\": \"/report/public/img/border/border20.png\",\n  \"query\": {},\n  \"thumbnail\": \"\",\n  \"name\": \"财务大数据看板\",\n  \"info\": \"某某某集团财务大数据看板\"\n}",
+    "imageUrl": "/report/public/img/border/border20.png",
+    "largeScreenDescribe": "某某某集团财务大数据看板",
+    "largeScreenName": "财务大数据看板",
+    "thumbnail": "/report/public/img/border/border20.png",
+    "backgroundColor": null,
+    "width": "1920",
+    "height": "1080",
+    "scale": "65.10416666666666",
+    "uuid": null
+  },
+  "code": "200",
+  "success": true,
+  "message": "操作提示"
+}

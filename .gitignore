@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+/node_modules
+/dist
+=======
+.idea/
+.gradle/
+.cxx/
+build/
+obj/
+*.iml
+local.properties
+>>>>>>> 670931e5587d71ded9ae4cb77fbfec1221582800

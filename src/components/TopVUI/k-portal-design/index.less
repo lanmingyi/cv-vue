@@ -1,0 +1,88 @@
+/*
+ * @Description: 门户拖拽页样式沿用自表单设计器，部分重写样式
+ * @Author: 黄婷
+ * @Date: 2021-05-20 18:13:04
+ * @LastEditTime: 2021-05-21 13:52:37
+ * @LastEditors: 黄婷
+ * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\k-portal-design\index.less
+ */
+@left-width      : 135px;
+@right-width      : 320px;
+@header-height         : 56px;
+.index-container-1592076357139{
+    .content{
+        aside{
+            &.left {
+                // width: @left-width ;
+                ul {
+                    li {
+                        // width: calc(100% - 2px);
+                    }
+                }
+            }
+            &.right{
+                width: @right-width;
+                .properties-centent .properties-body{
+                    padding:0;
+                    height: calc(100% - 0px);
+                }
+                .ant-collapse{
+                    border:none;
+                    >.ant-collapse-item{
+                        // border:none;
+                        .ant-collapse-header{
+                            background:#fff;
+                        }
+                    }
+                }
+            }
+        }
+        section{
+            max-width: calc(100% - @left-width - @right-width);
+            .form-panel .draggable-box .list-main .drag-move-box > .copy,
+            .form-panel .draggable-box .list-main .drag-move-box > .delete{
+                z-index: 1000;
+            }
+        }
+    }
+    .ant-card-extra{
+        width:80%;
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    .ant-calendar-picker{
+        min-width: 100px !important;
+    }
+    .card-title-icon{ 
+        margin-right: 5px;
+    }
+    .ant-tabs{
+        background:#fff;
+        .ant-tabs-content{
+            padding: 0 16px;
+        }
+    }
+} 
+
+#printKFormBuild{
+    .ant-card-extra{
+        width:80%;
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+        .ant-calendar-picker{
+            min-width: 100px !important;
+        }
+        
+    }
+    .card-title-icon{ 
+        margin-right: 5px;
+    }
+    .ant-tabs{
+        background:#fff;
+        .ant-tabs-content{
+            padding: 0 16px;
+        }
+    }
+}

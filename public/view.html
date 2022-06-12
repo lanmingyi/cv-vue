@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./report/public/js/api/axios.min.js"></script>
+    <script src="./report/plugin/lib/vue.min.js"></script>
+
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
+
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="./report/plugin/element-ui/index.css">
+    <!-- 引入组件库 -->
+    <script src="./report/plugin/element-ui/index.js"></script>
+    <link href="./report/plugin/animate/animate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./report/plugin/lib/index.css" />
+    <link rel="stylesheet" href="./report/public/css/style.css" />
+    <link rel="stylesheet" href="./report/public/css/common.css" />
+    <link rel="stylesheet" href="./report/public/css/iconfont.css" />
+    <link rel="stylesheet" href="./report/public/font/iconfont.css" />
+    <link rel="stylesheet" href="./report/plugin/swiper/swiper.min.css" />
+    <!--    <link rel="stylesheet" href="common/closefont.css">-->
+    <script src="./report/plugin/lib/components.js"></script>
+
+    <script src="./report/plugin/swiper/swiper.min.js"></script>
+    <script src="./report/echarts/echarts.min.js"></script>
+    <script src="./report/echarts/echarts-wordcloud.min.js"></script>
+    <script src="./report/public/js/theme/xvue.project.js"></script>
+    <script src="./report/public/js/theme/halloween.project.js"></script>
+    <script src="./report/public/js/theme/wonderland.project.js"></script>
+    <script src="./report/public/js/sortable/Sortable.min.js"></script>
+    <script src="./report/public/js/sortable/vuedraggable.umd.min.js"></script>
+    <script src="./report/public/js/common.js?version=1.0"></script>
+    <script src="./report/public/js/map/baseMap.js"></script>
+    <script src="./report/public/js/local/colorOption.js"></script>
+    <script src="./report/public/js/local/imgOption.js"></script>
+    <script src="./report/public/js/local/baseOption.js"></script>
+    <script src="./report/plugin/lib/jquery.min.js"></script>
+    <script src="./report/plugin/lib/jquery.mousewheel.min.js"></script>
+    <script src="./report/public/js/design.js"></script>
+    <!--图表初始化数据-->
+    <script src="./report/public/js/local/localData.js"></script>
+    <!--地图上加超链接(地理坐标图组件) -->
+    <script src="./report/public/js/map/chinaMap.js"></script>
+    <script src="./report/public/js/local/baseList.js"></script>
+    <script src="./report/plugin/lib/utils.js"></script>
+    <script src="./report/plugin/lib/xvue.min.js"></script>
+
+    <!--update-begin--Author:liangxs  Date:20191223 for：[3345]地图二次开发---------------------->
+    <!--异步注册地图-->
+    <script src="./report/public/js/map/register.js"></script>
+    <!--通用地图组件-->
+    <script src="./report/public/js/map/proMap.js"></script>
+    <!--派件地图组件-->
+    <script src="./report/public/js/map/virtualmap.js"></script>
+    <!--全国物流组件-->
+    <script src="./report/public/js/map/coolrdMap.js"></script>
+    <!--城市派件地图数据初始化js-->
+    <script src="./report/public/js/map/initialization.js"></script>
+    <!--全国物流地图数据初始化js-->
+    <script src="./report/public/js/map/geoCoordMap.js"></script>
+    <script src="./report/public/js/map/baseVirtualmap.js"></script>
+    <script src="./report/public/js/fullscreen.js"></script>
+    <script src="./report/public/js/map/point.js"></script>
+    <script src="./report/public/js/map/pointmap.js"></script>
+    <!--update-end--Author:liangxs  Date:20191223 for：[3345]地图二次开发---------------------->
+
+    <style>
+        #app {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .content {
+            transform-origin: 0 0;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="content" :style="styleName">
+            <xvue-draggable disabled :index="index" :z-index="item.zIndex" v-for="(item,index) in list" :width="item.component.width" :height="item.component.height" :key="index" :top="item.top" :left="item.left" v-show="!item.destruction && !item.display">
+                <xvue-echart-slide v-if="item.component.prop==='slide'" :option="item.component.option" :width="item.width" :height="item.height">
+                    <div class="swiper-slide" v-for="(citem,cindex) in item.child.index" :key="citem">
+                        <component :width="item.component.width" :height="item.component.height" :ref="'list_'+index" disabled :id="'component_'+index" :is="'xvue-echart-'+list[citem].component.name" :component="list[citem].component" :data="list[citem].data" :option="list[citem].component.option"
+                            :theme="list[citem].component.option.theme" :url="list[citem].url" :child="list[citem].child" :time="list[citem].time" :home-url="config.url" :data-method="list[citem].dataMethod" :data-type="list[citem].dataType" :data-query="handleGetQuery(list[citem])"
+                            :data-append="list[citem].dataAppend" :click="handleConClick" :formatter="list[citem].formatter" :label-formatter="list[citem].labelFormatter" :click-formatter="list[citem].clickFormatter" :data-formatter="list[citem].dataFormatter"
+                            :title-formatter="list[citem].titleFormatter">
+                        </component>
+                    </div>
+                </xvue-echart-slide>
+
+                <component v-else :width="item.component.width" :height="item.component.height" :ref="'list_'+index" :id="'component_'+index" :is="'xvue-echart-'+item.component.name" :component="item.component" :data="item.data" :option="item.component.option" :theme="item.component.option.theme"
+                    :url="item.url" :child="item.child" :time="item.time" :home-url="config.url" :data-method="item.dataMethod" :data-type="item.dataType" :data-query="handleGetQuery(item)" :data-append="item.dataAppend" :click="handleConClick" :formatter="item.formatter"
+                    :label-formatter="item.labelFormatter" :click-formatter="item.clickFormatter" :data-formatter="item.dataFormatter" :title-formatter="item.titleFormatter">
+                </component>
+
+            </xvue-draggable>
+        </div>
+    </div>
+</body>
+
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                url: {
+                    "queryById": getBaseUrl + "/report/largeScreen/getDeleteByUuid",
+                },
+                scale: 1,
+                config: config,
+                list: list
+            }
+        },
+        created() {},
+        mounted() {
+            let uuid = getQueryString('uuid');
+            let token = JSON.parse(localStorage.getItem('vuejs__Access-Token')).value;
+
+            document.title = "大屏报表";
+            if (!uuid) {
+                return;
+            }
+            const loading = this.$loading({
+                lock: true,
+                text: '正在加载中，请稍后',
+                spinner: 'el-icon-loading',
+                background: 'rgba(0, 0, 0, 0.7)'
+            });
+            axios.get(this.url.queryById, {
+                params: {
+                    uuid: uuid,
+                },
+                headers: {
+                    "token": token
+                }
+            }).then(res => {
+                if (res.data.code === '200') {
+                    let report = res.data.result;
+                    document.title = report.largeScreenName + '   -   大屏报表';
+                    this.list = eval("(" + report.desScreenItemJson + ")");
+                    this.config = eval("(" + report.desScreenMainJson + ")");
+                    this.config.thumbnail = report.thumbnail;
+                    this.config.backgroundImage = report.imageUrl;
+                    loading.close();
+                    if (this.$refs.content) this.contentWidth = this.$refs.content.offsetWidth;
+                    this.setScale();
+                    window.onresize = () => {
+                        this.initData();
+                        this.setScale();
+                    }
+                }
+            });
+        },
+        computed: {
+            styleName() {
+                const scale = this.scale > 1 ? 1 : this.scale;
+                return Object.assign({
+                    transform: "scale(" + scale + "," + scale + ")",
+                    width: this.setPx(this.config.width),
+                    height: this.setPx(this.config.height),
+                    backgroundColor: this.config.backgroundColor
+                }, (() => {
+                    let backgroundImage = this.config.backgroundImage;
+                    if (backgroundImage) {
+                        return {
+                            background: "url(" + backgroundImage + ") 0% 0% / 100% 100% rgb(3, 12, 59)",
+                        }
+                    }
+                    return
+                })())
+            },
+        },
+        methods: {
+            initData() {
+                if ((this.config.mark || {}).show) {
+                    this.watermark(this.config.mark);
+                }
+            },
+            handleGetQuery(item) {
+                return Object.assign(this.deepClone(this.config.query), item.dataQuery)
+            },
+            handleConClick({
+                type,
+                child,
+                value
+            }) {
+                if (type === 'tabs') {
+                    const indexList = child.index;
+                    indexList.forEach((index) => {
+                        const paramName = child.paramName;
+                        let url = this.list[index].url;
+                        if (url) {
+                            this.list[index].url = addUrlParam(url, paramName, value);
+                            this.$refs['list_' + index].forEach(ele => {
+                                ele.updateData();
+                            })
+                        }
+                    })
+                }
+            },
+            setScale() {
+                this.scale = (window.innerWidth / this.config.width)
+            },
+        }
+    })
+</script>
+
+</html>

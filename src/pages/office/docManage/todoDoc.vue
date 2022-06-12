@@ -1,0 +1,484 @@
+<template>
+  <div class="container">
+    <a-card :bordered="false">
+      <div class="toolbar flex justify-between flex-wrap" style="width: 100%;">
+        <div class="table-operator">
+          <!-- <a-button class="cu-btn-primary" icon="plus" @click="handleAdd('master')">新拟公文</a-button> -->
+          <!-- <a-button class="cu-btn-default"
+            icon="edit" @click="handleEdit('all','master')">编辑</a-button>
+					<a-button class="cu-btn-danger" icon="delete" @click="handleSub('all','master')">删除</a-button>
+					<a-button class="cu-btn-default"
+            icon="edit" >导出</a-button> -->
+        </div>
+        <div class="table-page-search-wrapper">
+          <a-form layout="inline">
+            <div class="flex justify-between flex-wrap">
+              <a-form-item label="">
+                <a-input v-model="queryParam.trainName" placeholder="文号" />
+              </a-form-item>
+              <a-form-item label="">
+                <a-input
+                  v-model="queryParam.trainName"
+                  placeholder="公文标题"
+                />
+              </a-form-item>
+              <a-form-item label="">
+                <a-input
+                  v-model="queryParam.trainName"
+                  placeholder="来文单位"
+                />
+              </a-form-item>
+              <a-form-item label="">
+                <a-input
+                  v-model="queryParam.trainName"
+                  placeholder="公文类别"
+                />
+              </a-form-item>
+              <div class="table-page-search-submitButtons flex align-center">
+                <a-button class="cu-btn-primary" @click="resetForm()"
+                  >查询</a-button
+                >
+                <a-button class="cu-btn-filter" @click="resetSearchForm()"
+                  >重置</a-button
+                >
+              </div>
+            </div>
+          </a-form>
+        </div>
+      </div>
+      <a-tabs default-active-key="1" @change="changTabs">
+        <a-tab-pane key="1" tab="待办公文">
+          <s-table
+            ref="masterList"
+            size="small"
+            :columns="columns"
+            :data="loadData"
+            bordered
+            :rowSelection="rowSelection"
+            rowKey="uuid"
+            showPagination="auto"
+            :rowClassName="rowClassName"
+            @rowClick="masterRowClick"
+          >
+            <span slot="serial" slot-scope="text, record, index">
+              {{ index + 1 }}
+            </span>
+            <span slot="operate" slot-scope="text, record">
+              <template>
+                <!-- <a @click="handleReturn(record)">退回</a> -->
+                <a @click="handlePreview(record)">查看</a>
+                <a-divider type="vertical" />
+                <a @click="handleSign(record)">签收</a>
+              </template>
+            </span>
+          </s-table>
+        </a-tab-pane>
+        <a-tab-pane key="2" tab="待阅公文">
+          <s-table
+            ref="subList"
+            rowKey="uuid"
+            :columns="subColumns"
+            bordered
+            :rowSelection="subRowSelection"
+            @rowClick="subRowClick"
+            :rowClassName="subRowClassName"
+            :data="loadDataSub"
+          >
+            <span slot="serial" slot-scope="text, record, index">
+              {{ index + 1 }}
+            </span>
+            <span slot="action" slot-scope="text, record">
+              <template>
+                <a @click="handlePreview(record)">查看</a>
+              </template>
+            </span>
+          </s-table>
+        </a-tab-pane>
+      </a-tabs>
+      <edit-form
+        ref="masterModal"
+        :visibleType="masterVisible"
+        :loading="masterConfirmLoading"
+        :model="masterMdl"
+        @cancel="handleCancel('master')"
+        @return="handleReturn()"
+        @sign="handleSign()"
+        :actType="1"
+      />
+      <submit-form
+        ref="submitModal"
+        :visible="submitVisible"
+        :loading="submitConfirmLoading"
+        :model="masterMdl"
+        @cancel="handleSubmitCancel()"
+        @ok="handleSubmitOk()"
+      />
+      <!-- 			<detail-form ref="detailModal" :visible="visibleDetail" :loading="masterConfirmLoading" :model="masterMdl" @cancel="handleDetailCancel" :type="2"
+			@ok="handleDetailOk" /> -->
+    </a-card>
+  </div>
+</template>
+
+<script>
+import { baseUrl } from "@/services/baseUrl.js";
+import { pdfStreamHandeler } from "@/services/common";
+import { STable } from "@/components";
+import { dataListMixin } from "@/mixins/dataListMixin";
+import editForm from "./editPut.vue";
+import submitForm from "./editSubmit.vue";
+const columns = [
+  {
+    title: "#",
+    width: 50,
+    align: "center",
+    scopedSlots: {
+      customRender: "serial",
+    },
+  },
+  {
+    title: "公文标题",
+    dataIndex: "docTitle",
+  },
+  {
+    title: "来文单位",
+    dataIndex: "transUnitName",
+  },
+  {
+    title: "文号",
+    dataIndex: "postCode",
+  },
+  {
+    title: "来文时间",
+    dataIndex: "transUnitTime",
+  },
+  {
+    title: "状态",
+    dataIndex: "status",
+    scopedSlots: {
+      customRender: "status",
+    },
+  },
+  {
+    title: "操作",
+    width: 100,
+    dataIndex: "operate",
+    scopedSlots: {
+      customRender: "operate",
+    },
+  },
+];
+const subColumns = [
+  {
+    title: "#",
+    width: 50,
+    align: "center",
+    scopedSlots: {
+      customRender: "serial",
+    },
+  },
+  {
+    title: "公文标题",
+    dataIndex: "docTitle",
+  },
+  {
+    title: "主送",
+    dataIndex: "lordSentName",
+  },
+  {
+    title: "抄送",
+    dataIndex: "copySentName",
+  },
+  {
+    title: "协办部门",
+    dataIndex: "transUnitName",
+  },
+  {
+    title: "发文编号",
+    dataIndex: "postCode",
+  },
+  {
+    title: "发文日期",
+    dataIndex: "transUnitTime",
+  },
+  {
+    title: "操作",
+    dataIndex: "action",
+    width: 100,
+    scopedSlots: {
+      customRender: "action",
+    },
+  },
+];
+export default {
+  name: "TableList",
+  mixins: [dataListMixin],
+  components: {
+    STable,
+    editForm,
+    submitForm,
+  },
+  data() {
+    this.columns = columns;
+    this.subColumns = subColumns;
+    return {
+      queryParam: {},
+      queryParamSub: {},
+      queryParamTrainee: {},
+      url: {
+        getPageSet: "/system/topicBase/getPageSet",
+      },
+      urlpdf: {
+        pdfStreamHandeler: "/system/attachment/pdfStreamHandeler",
+      },
+      loadData: (parameter) => {
+        const requestParameters = Object.assign({}, parameter, this.queryParam);
+        return this.$post(this.url.getPageSet, requestParameters).then(
+          (res) => {
+            var list = {
+              pageNo: 1,
+              pageSize: 10,
+              rows: [
+                {
+                  nameId: "code",
+                  name: "管理员",
+                  transUnitTime: "2018-06-12 10:49:01",
+                  transUnitName: "国务院",
+                  status: "待办",
+                  docTitle: "示例执行器",
+                  uuid: "F9BF6730AC374624AAB327B49EBA7807",
+                  trainContent: "示例执行器123",
+                  postCode: "黔自然资规〔2020〕5号",
+                },
+                {
+                  nameId: "code",
+                  name: "管理员",
+                  transUnitTime: "2018-06-12 10:49:01",
+                  transUnitName: "国务院",
+                  status: "待办",
+                  docTitle: "赵丽颖黑超遮面气场全开，高铁商务舱中狂凹造型",
+                  uuid: "97c3c7800c254e38955603206ba1285d",
+                  trainContent:
+                    "赵丽颖黑超遮面气场全开，高铁商务舱中狂凹造型123",
+                  postCode: "黔自然资规〔2020〕5号",
+                },
+                {
+                  nameId: "code",
+                  name: "管理员",
+                  transUnitTime: "2018-06-12 10:49:01",
+                  transUnitName: "国务院",
+                  status: "待办",
+                  docTitle: "杨幂女儿太厉害，才4岁就看纯英文动画片",
+                  uuid: "bd85830e4a2c4ffaaa229ad76791adae",
+                  trainContent: "杨幂女儿太厉害，才4岁就看纯英文动画片123",
+                  postCode: "黔自然资规〔2020〕5号",
+                },
+                {
+                  nameId: "code",
+                  name: "管理员",
+                  transUnitTime: "2018-06-12 10:49:01",
+                  transUnitName: "国务院",
+                  status: "待办",
+                  docTitle: "7步搞定4㎡卫生间装修，又省钱又上档次",
+                  uuid: "93c3e68af6654bd5a3290a5b24751bbe",
+                  trainContent: "7步搞定4㎡卫生间装修，又省钱又上档次123",
+                  postCode: "黔自然资规〔2020〕5号",
+                },
+              ],
+              totalCount: 1,
+              totalPage: 1,
+            };
+            return list;
+          }
+        );
+      },
+      loadDataSub: (parameter) => {
+        const requestParameters = Object.assign(
+          {},
+          parameter,
+          this.queryParamSub
+        );
+        return this.$post(this.url.getPageSet, requestParameters).then(
+          (res) => {
+            var list = {
+              pageNo: 0,
+              pageSize: 0,
+              rows: [
+                {
+                  nameId: "code",
+                  lordSentName: "管理员",
+                  copySentName: "张三",
+                  transUnitTime: "2018-06-12 10:49:01",
+                  transUnitName: "国务院",
+                  status: 1,
+                  docTitle: "示例执行器",
+                  uuid: "F9BF6730AC374624AAB327B49EBA7807",
+                  trainContent: "示例执行器123",
+                  postCode: "黔自然资规〔2020〕5号",
+                },
+              ],
+              totalCount: 0,
+              totalPage: 0,
+            };
+            return list;
+          }
+        );
+      },
+      key: 1,
+      subVisible: false,
+      SubLoadingUserPost: false,
+      SubConfirmLoading: false,
+      mdlUserPost: null,
+      masterVisible: false,
+      masterMdl: null,
+      masterConfirmLoading: false,
+      detailConfirmLoading: false,
+      trainList: [
+        {
+          text: "礼仪",
+          value: "礼仪",
+        },
+      ],
+      masterSelectedRowKeys: [],
+      masterRows: "",
+      masterUuids: "",
+      subSelectedRowKeys: [],
+      subRows: "",
+      subUUids: "",
+      imgVisible: false,
+      imgPreview: "",
+      meetingState: [],
+      visibleDetail: false,
+      submitVisible: false,
+      submitConfirmLoading: false,
+    };
+  },
+  computed: {
+    rowSelection() {
+      return {
+        selectedRowKeys: this.masterSelectedRowKeys,
+        onChange: this.onSelectChangeMaster,
+      };
+    },
+    subRowSelection() {
+      return {
+        selectedRowKeys: this.subSelectedRowKeys,
+        onChange: this.onSelectChangeSub,
+      };
+    },
+  },
+  mounted() {},
+  methods: {
+    handleReturn(record) {
+      var that = this;
+      var tips = "";
+      if (record) {
+        tips = record.docTitle;
+      } else {
+        tips = "这条公文";
+      }
+      that.$confirm({
+        title: "警告",
+        content: `是否退回《` + tips + "》？",
+        okText: "确定",
+        okType: "danger",
+        cancelText: "取消",
+        onOk() {
+          that.$message.error("退回数据失败");
+        },
+        onCancel() {
+          console.log("Cancel");
+        },
+      });
+    },
+    handleSubmitCancel() {
+      this.submitVisible = false;
+    },
+    handleSubmitOk() {
+      this.submitVisible = false;
+    },
+    handleSign(record) {
+      this.submitVisible = true;
+    },
+    handlePreview(record) {
+      this.masterVisible = true;
+      this.$refs.masterModal.edit("disabled");
+    },
+    changTabs(key) {
+      var that = this;
+      that.key = Number(key);
+      that.$nextTick(() => {
+        setTimeout(() => {
+          if (that.key === 1 && that.$refs.masterList) {
+            that.$refs.masterList.refresh(); // 设置刷新子表
+          } else if (that.key === 2 && that.$refs.subList) {
+            that.$refs.subList.refresh(); // 设置刷新子表
+          }
+        }, 10);
+      });
+    },
+    rowClassName(row) {
+      return row.uuid === this.masterUuids ? "bg-bray" : "";
+    },
+    subRowClassName(row) {
+      return row.uuid === this.subUuids ? "bg-bray" : ""; // 每条数据的唯一识别值
+    },
+    masterRowClick(record, index) {
+      this.masterRows = record;
+      this.masterUuids = record.uuid;
+      this.queryParamSub.puuid = record.uuid;
+      this.queryParamSub.page = this.queryParamSub.page
+        ? this.queryParamSub.page
+        : "1";
+      this.queryParamSub.rows = this.queryParamSub.pageSize
+        ? this.queryParamSub.pageSize
+        : "10";
+      if (this.key === 1 && this.$refs.subList) {
+        this.$refs.subList.refresh();
+      } else if (this.key === 2 && this.$refs.traineeList) {
+        this.$refs.traineeList.refreshList(this.queryParamSub);
+      }
+    },
+    subRowClick(record, index) {
+      this.subRows = record;
+      this.subUuids = record.uuid;
+    },
+    handleDetailCancel() {
+      this.visibleDetail = false;
+    },
+    handleDetailOk() {
+      this.visibleDetail = false;
+    },
+    handleBrowse(record) {
+      this.visibleDetail = true;
+      let form = {};
+      form = this.$refs.detailModal.form;
+      form.resetFields();
+    },
+    resetForm() {
+      this.$refs.masterList.refresh();
+    },
+    resetSearchForm() {
+      this.queryParam = {};
+      this.$refs.masterList.refresh();
+    },
+  },
+};
+</script>
+
+<style lang="less">
+.rowColorRed {
+  background-color: #ffd2d2;
+}
+
+.ant-tag-blue {
+  color: white;
+  background: #009688;
+  border-color: #009688;
+}
+
+.ant-tag-red {
+  color: white;
+  background: #ff5722;
+  border-color: #ff5722;
+}
+</style>

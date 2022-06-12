@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>大屏报表</title>
+    <link rel="icon" href="./logo.png" type="image/x-icon" />
+    <script src="./report/plugin/lib/vue.min.js"></script>
+    <script src="./report/public/js/api/axios.min.js"></script>
+
+    <link rel="stylesheet" href="./report/plugin/element-ui/index.css">
+    <script src="./report/plugin/element-ui/index.js"></script>
+    <link href="./report/plugin/animate/animate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./report/plugin/lib/index.css" />
+    <link rel="stylesheet" href="./report/public/css/list.css" />
+    <link rel="stylesheet" href="./report/public/css/common.css" />
+    <link rel="stylesheet" href="./report/public/css/iconfont.css" />
+    <link rel="stylesheet" href="./report/plugin/swiper/swiper.min.css" />
+    <script src="./report/plugin/lib/utils.js"></script>
+    <script src="./report/public/js/api/api.js"></script>
+    <script src="./report/public/js/common.js"></script>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: rgb(23, 27, 34);
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+        
+        .content_container {
+            margin-bottom: 50px;
+        }
+        
+        .content_btn_edit,
+        .content_btn_del {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        
+        .content_btn_del {
+            padding-right: 20px;
+        }
+        
+        .content_tips_add {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .el-message-box__message {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <el-container>
+            <el-main>
+                <div class="content">
+                    <div class=" content content_container">
+                        <!-- @click="addModal('1')" -->
+                        <div class="content__item content__item--add">
+                            <a :href=`build.html?sort=add` target="_blank">
+                                <i class="el-icon-circle-plus-outline"></i>
+                                <div>新建大屏</div>
+                            </a>
+                            <!-- <div class="content_tips_add">
+									<i class="el-icon-circle-plus-outline"></i>
+									<div>新建大屏</div>
+								</div> -->
+                        </div>
+                        <div v-for="(item,index) in list" class="content__item">
+                            <div class="content__info" @click="getExcelViewUrl(item)">
+                                <img v-if="item.thumbnail" :src="getThumbnail(item.thumbnail)" alt="" />
+                                <img v-else-if="item.imageUrl" :src="getImagePath(item.imageUrl)" alt="" />
+                            </div>
+                            <div class="content__main">
+                                <span class="content__name">{{item.largeScreenName}}</span>
+
+                                <div class="content__menu">
+                                    <a class="content_btn_edit" :href=`view.html?uuid=${item.uuid}&title=${item.largeScreenName}` target="_blank">预览</a>
+
+                                    <a class="content__btn" :href=`build.html?sort=edit&uuid=${item.uuid}` target="_blank">编辑</a>
+
+                                    <!-- &nbsp;<a href="#" class="content__btn" @click="deleteReport(item)">删除</a> -->
+                                    <!-- <div class="content_btn_edit" @click="addModal('2',item)">编辑</div> -->
+                                    <div class="content_btn_del" @click="deleteReport(item)">删除</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block pagination-box">
+                        <el-pagination :background=true :page-size="rows" layout="total, sizes, prev, pager, next, jumper" :total="total" :page-count="pages" :page-sizes="[10, 20, 30, 40, 50]" :current-page="page" @prev-click="carryPrev" @next-click="carryNext" @current-change="carryCurrentChange"
+                            @size-change="carrySizeChange">
+                        </el-pagination>
+                    </div>
+                </div>
+                <el-dialog :title="editTitle" :visible.sync="showAdd" center :fullscreen="true" :before-close="handleClose">
+                    <div id="showAddTest" :style="'height:'+ height">
+                        <iframe id="myIFrame" :src="addUrl" frameborder="no" style="width: 100%;height: 100%;" scrolling="auto"></iframe>
+                    </div>
+                </el-dialog>
+            </el-main>
+        </el-container>
+    </div>
+</body>
+<noscript>
+		<iframe src="*.htm"></iframe>
+	</noscript>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                baseUrl,
+                getBaseUrl,
+                token: null,
+                url: {
+                    "list": getBaseUrl + "/list",
+                    "delete": getBaseUrl + "/report/largeScreen/delete",
+                    // "delete": '/report/largeScreen/delete',
+                    "copyReport": getBaseUrl + "/copyReport"
+                },
+                activeName: '0',
+                list: [],
+                page: 1,
+                total: 1,
+                pages: 1,
+                rows: 20,
+                showAdd: false,
+                addUrl: '',
+                editTitle: '新建大屏',
+                sortType: '',
+                uuid: '',
+                height: document.documentElement.clientHeight - 80 + 'px'
+            }
+        },
+        mounted() {
+            // this.token = getQueryString('token');
+            this.token = JSON.parse(localStorage.getItem('vuejs__Access-Token')).value;
+            this.getData();
+        },
+        watch: {
+            activeName: {
+                handler(val) {
+                    this.getData();
+                }
+            }
+        },
+        methods: {
+            getExcelViewUrl(item) {
+                // return "view.html?uuid=" + item.uuid + "&token=" + this.token
+                window.open(`view.html?uuid=${item.uuid}&title=${item.largeScreenName}`, '_blank')
+            },
+            getExcelBuildUrl(item) {
+                this.sortType = 'add'
+                return "build.html?sort=" + this.sortType
+            },
+            getExcelEditUrl(item) {
+                this.sortType = 'edit'
+                return `build.html?&sort=${this.sortType}&uuid=${item.uuid}`
+            },
+            handleClose() {
+                this.$confirm('确认关闭？')
+                    .then(_ => {
+                        this.showAdd = false
+                        this.getData()
+                    })
+                    .catch(_ => {});
+            },
+            addModal(type, item) {
+                if (type === '1') {
+                    this.editTitle = '新建大屏'
+                    this.sortType = 'add'
+                    this.addUrl = `build.html?token=${this.token}&sort=${this.sortType}`
+                } else if (type === '2') {
+                    this.editTitle = item.largeScreenName ? item.largeScreenName : '编辑模板'
+                    this.sortType = 'edit'
+                    this.uuid = item.uuid
+                    this.addUrl = `build.html?token=${this.token}&sort=${this.sortType}&uuid=${this.uuid}`
+                }
+                this.showAdd = true
+                window.onresize = function temp() {
+                    this.height = document.documentElement.clientHeight - 150 + 'px'
+                }
+            },
+            getThumbnail(path) {
+                if (path) {
+                    if (!path.startsWith("http")) {
+                        path = path;
+                    }
+                }
+                return path;
+            },
+            getImagePath(backgroundImage) {
+
+                if (backgroundImage) {
+                    if (!backgroundImage.startsWith("http")) {
+                        backgroundImage = backgroundImage;
+                    }
+                }
+                return backgroundImage;
+            },
+            copyReport(item) {
+                let nowTime = new Date().getTime();
+                item.createTime = nowTime;
+                item.updateTime = nowTime;
+                item.delFlag = 0;
+
+                const loading = this.$loading({
+                    lock: true,
+                    text: '正在复制中，请稍后',
+                    spinner: 'el-icon-loading',
+                    background: 'rgba(0, 0, 0, 0.7)'
+                });
+                axios.post(this.url.copyReport, item, {
+                    headers: {
+                        "token": this.token
+                    }
+                }).then(res => {
+                    loading.close();
+                    this.$message({
+                        offset: 200,
+                        duration: 700,
+                        showClose: true,
+                        message: '复制成功',
+                        type: 'success'
+                    });
+                    this.getData();
+
+                }).catch(err => {
+                    this.$message({
+                        offset: 200,
+                        duration: 2000,
+                        showClose: true,
+                        message: '复制失败',
+                        type: 'error'
+                    });
+                })
+
+
+            },
+            deleteReport(item) {
+                let tips = item.largeScreenName ? item.largeScreenName : '选中模板'
+                let deleteFn = () => {
+                    this.$confirm('确定删除' + tips + '吗?', '提示', {
+                        confirmButtonText: '确定',
+                        cancelButtonText: '取消',
+                        type: 'warning'
+                    }).then(() => {
+                        axios.get(this.url.delete, {
+                            params: {
+                                uuid: item.uuid,
+                            },
+                            headers: {
+                                "token": this.token
+                            }
+                        }).then(res => {
+                            if (res.data.statusCode === 200) {
+                                this.getData();
+                                this.$message({
+                                    type: 'success',
+                                    message: '删除成功!'
+                                });
+                            } else {
+                                this.$message({
+                                    type: 'error',
+                                    message: res.message
+                                });
+                            }
+                        });
+                    })
+                };
+                if (!item.protectionCode) {
+                    deleteFn();
+                    return;
+                }
+                validateProtectionCode(item.protectionCode, deleteFn)
+
+            },
+            getData() {
+                // 104:9774
+                axios.get(getBaseUrl + '/report/largeScreen/getPageSet?type=0', {
+                    params: {
+                        pageNo: this.page,
+                        pageSize: this.rows
+                    },
+                    headers: {
+                        'content-type': 'application/x-www-form-urlencoded',
+                        'token': this.token
+                    }
+                }).then(res => {
+                    this.list = res.data.rows;
+                    this.total = res.data.totalCount;
+                    this.pages = res.data.pageNo;
+                    this.initData();
+                })
+            },
+            carryPrev(val) {},
+            carryNext(val) {},
+            carrySizeChange(val) {
+                this.rows = val
+                this.getData()
+            },
+            carryCurrentChange(val) {
+                this.page = val
+                this.getData()
+            },
+            handleSelect(key, keyPath) {
+                this.activeName = key;
+            },
+            initData() {
+                this.list.forEach((ele, index) => {
+                    this.$set(this.list[index], '_menu', false)
+                })
+            }
+        }
+    })
+</script>
+</body>
+
+</html>
