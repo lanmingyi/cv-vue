@@ -44,7 +44,7 @@ export default {
 		  if(index>=0){
 		  	return this.configData[index].value
 		  } else {
-		  	return '湖南佐佑时代科技有限公司'
+		  	return '明图科技有限公司'
 		  }
 	  }
   },
