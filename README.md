@@ -4,7 +4,7 @@
 
 <img src='public/assets/demo.png' />
 
-![demo](public/assets/detection.gif)
+![demo](public/assets/detection2.gif)
 
 说明：
 
