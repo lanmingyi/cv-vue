@@ -1,4 +1,21 @@
-### 环境和依赖
+# 一、目标检测
+
+### 1. 选择权重
+
+<img src='public/assets/demo.png' />
+
+![demo](https://github.com/lanmingyi/cv-vue/public/assets/detection.gif)
+
+说明：
+
+1. 
+2. 
+
+# 二、人脸识别
+
+# 三、项目部署
+
+## 环境和依赖
 
 #### 安装 node.js
 
@@ -39,6 +56,35 @@ yarn --version
 ```
 
 ### 项目启动
+#### npm 启动
+
+- 安装依赖
+
+```
+npm install
+```
+
+- 编译并启动
+
+```
+npm run serve
+```
+
+- 编译
+
+```
+npm run build
+```
+
+- Lints and fixes files / 代码检查和文件规范格式化
+
+```
+npm run lint
+```
+
+- Customize configuration / 更多脚手架配置:
+- See [Configuration Reference](https://cli.vuejs.org/config/).
+
 
 #### yarn 启动(推荐使用)
 
@@ -66,25 +112,7 @@ yarn run build
 yarn run lint
 ```
 
-#### npm 启动
 
-- 安装依赖
-
-```
-npm install
-```
-
-- 编译并启动
-
-```
-npm run serve
-```
-
-- 编译
-
-```
-npm run build
-```
 
 ### 目录结构
 
@@ -136,3 +164,7 @@ npm run build
 └── vue.config.js                               # vue 配置文件
 
 ```
+
+**更新**：将启动命令写入*startup.sh*文件，内容如下：
+
+### ~~3.3 浏览器访问~~
