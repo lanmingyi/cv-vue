@@ -25,12 +25,12 @@
         <input type="file" ref="fileSelect" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
         <a-row>
           <a-col :span="12">
-            <img ref="img1" v-if="detectionImg===''" src="./images/object_detection/dog.jpg" height="300" width="500"/>
-            <img ref="img2" v-else :src="detectionImg" height="300" width="500"/>
+            <img ref="img1" v-show="detectionImg===''" src="./images/object_detection/dog.jpg" height="300" width="500"/>
+            <img ref="img2" v-show="detectionImg!==''" :src="detectionImg" height="300" width="500"/>
           </a-col>
           <a-col :span="12">
-            <img ref="result" v-if="ifBackEndDetection" :src="resultImg" height="300" width="500"/>
-            <canvas ref="canvas" v-else height="300" width="500"/>
+            <img ref="result" v-show="ifBackEndDetection" :src="resultImg" height="300" width="500"/>
+            <canvas ref="canvas" v-show="!ifBackEndDetection" height="300" width="500"/>
           </a-col>
         </a-row>
       </div>
@@ -97,6 +97,7 @@ export default{
       closeButton: true,
       file: '',
       server_url: 'http://127.0.0.1:5003',
+      // server_url: 'http://localhost:5003',
       resultImg: '',
       ifBackEndDetection: false,
     }
@@ -235,14 +236,18 @@ export default{
     },
 
     startDetection(e) {
+      this.ifBackEndDetection = false
       const c = this.$refs.canvas
       const img1 = this.$refs.img1
       const img2 = this.$refs.img2
+      // console.log('img1.src', img1.src)
+      // console.log('img2.src', img2.src)
+      // console.log('img2.src.includes(\'img\') || img2.src.includes(\'data\')', img2.src.includes('img') || img2.src.includes('data'))
       const ctx = c.getContext("2d");
-      if (img1){
-        this.cropToCanvas(img1, c, ctx);
-      }else{
+      if (img2.src.includes('img') || img2.src.includes('data')){
         this.cropToCanvas(img2, c, ctx);
+      }else{
+        this.cropToCanvas(img1, c, ctx);
       }
       // this.cropToCanvas(e.target, c, ctx);
 
@@ -309,10 +314,11 @@ export default{
 
     backEndDetection(){
       this.img = this.$refs.img1 ? this.$refs.img1 : this.$refs.img2
-      this.file = this.img.src
-      console.log('this.img.src', this.img.src)
+      // this.file = this.img.src
+
       let param = new FormData()
-      param.append('file', this.file.src)
+      param.append('file', this.file, this.file.name)
+      console.log('param', param)
 
       // var timer = setInterval(() => {
       //   this.myFunc();
