@@ -4,7 +4,7 @@
 
 <img src='public/assets/demo.png' />
 
-![demo](https://github.com/lanmingyi/cv-vue/public/assets/detection.gif)
+![demo](public/assets/detection.gif)
 
 说明：
 
