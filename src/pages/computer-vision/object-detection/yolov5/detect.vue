@@ -25,7 +25,7 @@
         <input type="file" ref="fileSelect" style="display: none" accept="image/x-png,image/gif,image/jpeg"/>
         <a-row>
           <a-col :span="12">
-            <img ref="img1" v-if="detectionImg===''" src="./images/object_detection/1.jpg" height="300" width="500"/>
+            <img ref="img1" v-if="detectionImg===''" src="./images/object_detection/dog.jpg" height="300" width="500"/>
             <img ref="img2" v-else :src="detectionImg" height="300" width="500"/>
           </a-col>
           <a-col :span="12">
@@ -85,7 +85,7 @@ export default{
   components: {},
   data() {
     return {
-      imageList: ['调用摄像头', '选择文件', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg'],
+      imageList: ['调用摄像头', '选择文件', 'dog.jpg', 'eagle.jpg', 'giraffe.jpg', 'horses.jpg', 'person.jpg'],
       webModelList: ['yolov5s', 'yolov5x'],
       detectionImg: '',
 

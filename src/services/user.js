@@ -105,3 +105,8 @@ export function enterpriseWeChatLogin(parameter) {
 export function enterpriseDingtalkLogin(parameter) {
     return axios.post(baseUrl + '/system/dingding/ddLogin.api', qs.stringify(parameter));
 }
+
+
+export function loginByPhoneNumber(parameter) {
+    return null;
+}
