@@ -165,6 +165,8 @@ yarn run lint
 
 ```
 
-**更新**：将启动命令写入*startup.sh*文件，内容如下：
+### ~~常见问题~~
 
-### ~~3.3 浏览器访问~~
+- 1.解决Cannot read property 'getUserMedia' of undefined：
+  **在浏览器输入**：*chrome://flags/#unsafely-treat-insecure-origin-as-secure*，输入框中输入网址，然后将右侧Disabled 改成 Enabled即可，
+点击下方Relaunch会重启浏览器
