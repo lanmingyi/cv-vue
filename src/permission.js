@@ -128,6 +128,7 @@ router.beforeEach((to, from, next) => {
     } else {
         sessionStorage.removeItem(process.env.VUE_APP_TBAS_KEY)
         if (whiteList.includes(to.name)) {
+            console.log('whiteList', whiteList)
             // console.log(Vue.ls.get(ACCESS_TOKEN), '没有登录=====', to)
                 // 在免登录白名单，直接进入
             next()
