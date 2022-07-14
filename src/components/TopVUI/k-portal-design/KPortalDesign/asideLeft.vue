@@ -1,8 +1,8 @@
 <!--
  * @Description: 左侧控件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-13
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-08-06 16:28:31
  -->
 <template>

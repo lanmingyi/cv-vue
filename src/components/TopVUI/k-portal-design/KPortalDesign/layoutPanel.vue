@@ -1,10 +1,10 @@
 <!--
  * @Description: 门户设计器内容展示操作组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-08-06 16:26:54
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\KPortalDesign\layoutPanel.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="form-panel">

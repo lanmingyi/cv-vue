@@ -1,10 +1,10 @@
 /*** 
  * @Description: 组件输出文件,不打包antd ui组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-08-05 10:10:33
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\mini.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 
 // 解决Chrome控制台non-passive event listener输出问题

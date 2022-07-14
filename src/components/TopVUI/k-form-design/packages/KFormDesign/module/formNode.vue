@@ -1,10 +1,10 @@
 <!--
  * @Description: 将数据通过k-form-item组件解析，生成控件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-14 09:13:58
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormDesign\module\formNode.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 
 <template>
@@ -52,7 +52,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  * description 通过json生成的单个表单节点
  */

@@ -1,8 +1,8 @@
 <!--
  * @Description: 折叠组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-13
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-09-08 10:42:57
  -->
 <template>

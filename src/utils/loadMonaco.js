@@ -1,10 +1,10 @@
 /*** 
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 15:41:28
  * @LastEditTime: 2021-07-06 15:41:48
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\utils\loadMonaco.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import loadScript from './loadScript'
 import pluginsConfig from './pluginsConfig'

@@ -1,10 +1,10 @@
 <!--
  * @Description: 卡片列表配置，可用于文章、新闻、公告
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-09-16 11:04:00
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\component\articleCard.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-card

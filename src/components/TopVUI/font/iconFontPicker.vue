@@ -1,10 +1,10 @@
 <!--
  * @Description: 阿里图标选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-01 14:27:12
  * @LastEditTime: 2021-09-16 10:43:32
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\font\iconFontPicker.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

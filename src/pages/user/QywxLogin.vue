@@ -1,9 +1,9 @@
 <!--
  * @Description: 企业微信登录
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-09 18:17:16
  * @LastEditTime: 2021-07-30 14:13:33
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\user\QywxLogin.vue
 -->
 

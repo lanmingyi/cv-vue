@@ -1,10 +1,10 @@
 <!--
  * @Description: 岗位选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-03-02 14:49:16
  * @LastEditTime: 2021-08-05 14:07:51
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TDepartment.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<t-modal title="岗位" :width="1000" :visible="visible" switchFullscreen wrapClassName="t-popup-modal"

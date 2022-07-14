@@ -1,10 +1,10 @@
 <!--
  * @Description: 表格列字典数据处理
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-25 09:25:29
  * @LastEditTime: 2021-08-25 10:35:19
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\dict\filterDictTextByCode.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>{{ textValue }}</div>

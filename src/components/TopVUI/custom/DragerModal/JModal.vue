@@ -1,10 +1,10 @@
 <!--
  * @Description: 可拖拽窗口；默认使用
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-19 13:44:39
  * @LastEditTime: 2021-08-03 12:02:48
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\DragerModal\JModal.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-modal

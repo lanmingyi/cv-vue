@@ -123,7 +123,7 @@
 </template>
 <script>
 	/*
-	 * author 黄婷
+	 * author lmy
 	 * date 2019-11-20
 	 * description 表单属性设置面板组件
 	 */

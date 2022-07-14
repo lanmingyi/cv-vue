@@ -1,10 +1,10 @@
 <!--
  * @Description: 组件构建
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-09-16 10:47:55
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormBuild\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-config-provider :locale="locale">

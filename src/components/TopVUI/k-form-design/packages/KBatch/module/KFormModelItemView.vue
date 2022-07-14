@@ -1,9 +1,9 @@
 <!--
  * @Description: 传入record数据，通过判断record.type，来渲染对应的组件，无用
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:46:13
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KBatch\module\KFormModelItemView.vue
 -->
 
@@ -290,7 +290,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  */
 // import moment from "moment";

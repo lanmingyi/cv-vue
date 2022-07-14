@@ -1,10 +1,10 @@
 /*** 
  * @Description: 新增修改完成调用 handleOk方法 编辑弹框组件主表ref定义为masterModal，子表ref定义为subrModal
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 09:13:07
  * @LastEditTime: 2021-08-16 18:04:36
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\mixins\masterTableMixin.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import { ACCESS_TOKEN } from '@/store/mutation-types'
 import Vue from 'vue'

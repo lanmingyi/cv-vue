@@ -1,10 +1,10 @@
 <!--
  * @Description: 表单预览
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-09-14 13:35:06
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormPreview\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <t-modal
@@ -36,7 +36,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  */
 import jsonModel from "../KFormDesign/module/jsonModal";

@@ -1,9 +1,9 @@
 <!--
  * @Description: APP拖拽设计界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-08 16:36:05
  * @LastEditTime: 2021-07-08 19:57:20
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \misboot-cloud-vue\src\pages\system\sysSample\modal\design.vue
 -->
 <template>

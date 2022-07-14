@@ -1,10 +1,10 @@
 /*** 
  * @Description: axios请求
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:31
  * @LastEditTime: 2021-08-25 09:21:12
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\utils\request.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import Vue from 'vue'
 import axios from 'axios'

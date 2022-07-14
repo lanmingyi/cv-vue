@@ -1,10 +1,10 @@
 <!--
  * @Description: 登录界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-10 10:31:48
  * @LastEditTime: 2021-07-16 21:22:03
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\layouts\LoginLayout.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div :class="['login_content', isMobile ? 'mobile' : null]">

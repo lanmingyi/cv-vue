@@ -1,10 +1,10 @@
 <!--
  * @Description: 表单组件右侧属性配置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 11:19:51
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormDesign\module\formItemProperties.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="properties-centent kk-checkbox">
@@ -1302,7 +1302,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  * description 表单控件属性设置组件,因为配置数据是引用关系，所以可以直接修改
  */

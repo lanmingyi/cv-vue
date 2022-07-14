@@ -1,10 +1,10 @@
 <!--
  * @Description: 任务监听器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-11 15:58:13
  * @LastEditTime: 2021-09-16 10:32:40
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\taskListener.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="">

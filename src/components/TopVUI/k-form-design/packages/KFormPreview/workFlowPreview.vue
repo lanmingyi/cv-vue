@@ -1,10 +1,10 @@
 <!--
  * @Description: 流程表单
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-08-27 15:27:55
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormPreview\workFlowPreview.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="padding">

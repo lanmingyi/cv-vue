@@ -1,10 +1,10 @@
 <!--
  * @Description: 流转条件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-11 16:20:04
  * @LastEditTime: 2021-09-16 09:17:50
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\conditionsPanel.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="">

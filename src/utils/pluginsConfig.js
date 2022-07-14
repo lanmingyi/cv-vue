@@ -1,10 +1,10 @@
 /*** 
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 15:42:22
  * @LastEditTime: 2021-07-06 15:42:32
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\utils\pluginsConfig.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 const CDN = 'https://lib.baomitu.com/' // CDN Homepage: https://cdn.baomitu.com/
 const publicPath = process.env.BASE_URL

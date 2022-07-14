@@ -1,10 +1,10 @@
 /*** 
  * @Description: 组件批量引入
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-09 11:12:48
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\index.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import Ellipsis from '@/components/antd/Ellipsis'
 import STable from '@/components/table'

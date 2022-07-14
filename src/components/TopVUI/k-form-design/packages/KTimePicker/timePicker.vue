@@ -1,8 +1,8 @@
 <!--
  * @Description: 时间选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2020-01-11 17:30:48
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-08-19 18:09:33
  -->
 <template>

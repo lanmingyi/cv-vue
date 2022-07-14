@@ -1,10 +1,10 @@
 <!--
  * @Description: 传入record数据，通过判断record.type，来渲染对应的组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-07-21 15:23:15
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\component\listItem.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div>

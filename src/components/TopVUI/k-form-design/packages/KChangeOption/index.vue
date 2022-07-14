@@ -1,10 +1,10 @@
 <!--
  * @Description: 表单组件数据配置动态添加
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:47:10
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KChangeOption\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="option-change-container">
@@ -89,7 +89,7 @@
 </template>
 <script>
 	/*
-	 * author 黄婷
+	 * author lmy
 	 * date 2019-11-20
 	 * description 修改多选、下拉、单选等控件options的组件，添加移除校验规制的组件
 	 */

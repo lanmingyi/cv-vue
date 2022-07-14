@@ -1,10 +1,10 @@
 <!--
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-08-04 16:49:14
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\KPortalDesign\listItem copy.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>
@@ -15,7 +15,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  */
 // import moment from "moment";

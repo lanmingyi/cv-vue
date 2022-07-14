@@ -1,10 +1,10 @@
 <!--
  * @Description: 节点人员配置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-01 11:31:33
  * @LastEditTime: 2021-09-02 17:27:39
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\modal\processUser.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-card :bordered="false">

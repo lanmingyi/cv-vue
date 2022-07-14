@@ -1,9 +1,9 @@
 <!--
  * @Description:
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-06 11:16:06
  * @LastEditTime: 2021-08-09 17:59:22
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\system\configuration\tab\otherTab.vue
 -->
 <template>

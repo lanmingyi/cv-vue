@@ -1,10 +1,10 @@
 <!--
  * @Description: 天气
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-06-07 10:30:30
- * @LastEditors: 黄婷
- * @FilePath: \vue-antd-admine:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\weather.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div :id="weaterId" :style="{ height: height + 'px' }">

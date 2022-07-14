@@ -1,10 +1,10 @@
 <!--
  * @Description: 抽屉
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-07-02 09:48:25
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\components\TopVUI\custom\TDrawer.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<a-drawer

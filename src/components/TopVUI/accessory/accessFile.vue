@@ -1,10 +1,10 @@
 <!--
  * @Description: 附件组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-04-26 15:53:58
  * @LastEditTime: 2021-09-06 11:31:58
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\accessory\accessFile.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

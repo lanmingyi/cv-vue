@@ -1,10 +1,10 @@
 /*** 
  * @Description: 初始化路由
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:31
  * @LastEditTime: 2021-06-07 11:41:43
- * @LastEditors: 黄婷
- * @FilePath: \vue-antd-admine:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\router\index.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import Vue from 'vue'
 import Router from 'vue-router'

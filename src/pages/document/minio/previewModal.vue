@@ -1,10 +1,10 @@
 import { watch } from 'vue';
 <!--
  * @Description: 预览
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-18 15:42:31
  * @LastEditTime: 2021-08-27 17:40:55
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\document\minio\previewModal.vue
 -->
 <template>

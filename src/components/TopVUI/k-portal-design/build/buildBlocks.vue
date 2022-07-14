@@ -1,10 +1,10 @@
 <!--
  * @Description: 页面预览时使用递归组件调用自己，生成布局结构及组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-07-21 15:20:31
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\build\buildBlocks.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<!-- 标签页布局 -->

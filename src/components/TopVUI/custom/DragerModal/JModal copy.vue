@@ -1,10 +1,10 @@
 <!--
  * @Description: 可拖拽窗口、高度固定，传阅使用
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-04-29 16:02:40
  * @LastEditTime: 2021-06-03 10:04:34
- * @LastEditors: 黄婷
- * @FilePath: \vue-antd-admine:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\DragerModal\JModal.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<a-modal

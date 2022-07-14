@@ -1,9 +1,9 @@
 <!--
  * @Description: 企业微信登录结果页
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-07 09:27:28
  * @LastEditTime: 2021-09-18 11:49:46
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\user\weChatBack.vue
 -->
 <template>

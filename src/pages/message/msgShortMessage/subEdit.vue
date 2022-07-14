@@ -1,9 +1,9 @@
 <!--
  * @Description: 发送验证码模板
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:09
  * @LastEditTime: 2021-06-23 17:26:50
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vue-antd-admine:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\message\msgShortMessage\subEdit.vue
 -->
 <template>

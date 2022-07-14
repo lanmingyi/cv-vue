@@ -1,10 +1,10 @@
 <!--
  * @Description: 权限设置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-11 14:32:58
  * @LastEditTime: 2021-09-02 17:25:57
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\modal\permission.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="">

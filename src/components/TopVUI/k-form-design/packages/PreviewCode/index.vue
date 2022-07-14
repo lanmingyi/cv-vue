@@ -1,10 +1,10 @@
 <!--
  * @Description: 预览代码
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-14 13:35:21
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\PreviewCode\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

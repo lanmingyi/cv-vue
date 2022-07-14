@@ -1,10 +1,10 @@
 <!--
  * @Description: 页面视图
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-15 12:00:31
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\layouts\PageView.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <page-layout :desc="desc" :linkList="linkList">

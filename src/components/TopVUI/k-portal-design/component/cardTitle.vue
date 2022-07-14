@@ -1,10 +1,10 @@
 <!--
  * @Description: 卡片头部
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-08-19 18:33:40
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\component\cardTitle.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

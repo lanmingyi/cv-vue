@@ -1,10 +1,10 @@
 <!--
  * @Description: 人员穿梭组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-25 10:39:21
  * @LastEditTime: 2021-08-25 17:42:36
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TtransferByUser.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

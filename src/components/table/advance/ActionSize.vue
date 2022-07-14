@@ -1,10 +1,10 @@
 <!--
  * @Description: 数据表格尺寸
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-07-02 16:42:19
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\components\table\advance\ActionSize.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="action-size" ref="root">

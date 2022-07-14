@@ -1,10 +1,10 @@
 <!--
  * @Description: 角色
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-05-21 14:29:41
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\custom\TSelectRole.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<t-select-biz-component

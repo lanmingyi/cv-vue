@@ -2,7 +2,7 @@
  * @Description: 对上传文件组件进行封装
  * @Author: huangting
  * @Date: 2020-11-17 12:53:50
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-08-09 09:27:12
  -->
 <template>
@@ -49,7 +49,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-12-31
  * description 上传文件组件
  */

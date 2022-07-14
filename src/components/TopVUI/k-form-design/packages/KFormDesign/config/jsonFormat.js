@@ -1,10 +1,10 @@
 /*** 
  * @Description: 默认导入json数据格式
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:50:02
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormDesign\config\jsonFormat.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 export default `{
 	"list": [

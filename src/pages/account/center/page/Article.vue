@@ -1,10 +1,10 @@
 <!--
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-08-02 09:45:58
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\account\center\page\Article.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-list

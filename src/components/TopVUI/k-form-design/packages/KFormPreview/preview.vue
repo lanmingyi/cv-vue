@@ -1,10 +1,10 @@
 <!--
  * @Description: 预览，流程办理有用到
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 11:00:29
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormPreview\preview.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

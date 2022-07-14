@@ -1,10 +1,10 @@
 <!--
  * @Description: 颜色选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-09-03 16:49:22
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\color\colorPicker.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="abc">

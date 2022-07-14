@@ -1,10 +1,10 @@
 <!--
  * @Description: 修改卡片、图表，下拉框等控件options的组件，添加移除校验规制的组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-05-21 13:55:26
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\k-portal-design\KChangeOption\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="option-change-container">

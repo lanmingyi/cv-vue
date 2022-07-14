@@ -1,10 +1,10 @@
 /*** 
  * @Description: 门户数据请求
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-23 16:51:13
  * @LastEditTime: 2021-09-15 09:51:55
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\services\apiByPortal.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import request from '@/utils/mock'
 import axios from '@/utils/requestByPortal'

@@ -1,10 +1,10 @@
 /*** 
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-06-29 18:32:12
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\mixins\resize.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import { debounce } from '@/utils/index.js';
 export default {

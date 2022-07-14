@@ -1,9 +1,9 @@
 <!--
  * @Description: 预览代码
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-13 09:41:46
  * @LastEditTime: 2021-07-13 10:54:27
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \misboot-cloud-vue\src\pages\system\sysAppBasics\previewCode.vue
 -->
 <template>

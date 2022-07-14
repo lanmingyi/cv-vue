@@ -1,10 +1,10 @@
 <!--
  * @Description: 新版按钮配置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-11 15:37:03
  * @LastEditTime: 2021-09-02 17:00:16
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\modal\button\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="padding-bottom-xs">

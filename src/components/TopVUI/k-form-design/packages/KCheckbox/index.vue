@@ -1,10 +1,10 @@
 <!--
  * @Description: 复选框勾选
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:47:26
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KCheckbox\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-checkbox :val="_val" @change="handleChange" :checked="chackboxVal">

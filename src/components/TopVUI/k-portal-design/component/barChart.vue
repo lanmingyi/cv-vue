@@ -1,10 +1,10 @@
 <!--
  * @Description: 柱状图
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-09-16 11:03:41
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\component\barChart.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-card :hoverable="true" class="chart-box-122343">

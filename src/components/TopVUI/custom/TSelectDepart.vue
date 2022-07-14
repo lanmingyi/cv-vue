@@ -1,10 +1,10 @@
 <!--
  * @Description: 部门选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-08-20 14:26:58
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TSelectDepart.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="components-input-demo-presuffix">

@@ -1,10 +1,10 @@
 <!--
  * @Description: 省市区级联选择
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-08-06 17:14:18
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TAreaLinkage.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="j-area-linkage">

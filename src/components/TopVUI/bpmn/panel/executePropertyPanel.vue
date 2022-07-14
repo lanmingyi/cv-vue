@@ -1,10 +1,10 @@
 <!--
  * @Description: 监听器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-08-04 15:33:52
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\executePropertyPanel.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <t-modal

@@ -1,8 +1,8 @@
 <!--
  * @Description: 对上传图片组件进行封装
- * @Author: huangting
+ * @Author: lmy
  * @Date: 2020-11-17 12:53:50
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-09-16 11:01:59
  -->
 <template>
@@ -58,7 +58,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-12-31
  * description 上传图片组件
  */

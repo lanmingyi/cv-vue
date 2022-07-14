@@ -1,10 +1,10 @@
 <!--
  * @Description: 流程设计界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-09-02 16:51:34
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\bpmnDesign.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="main">

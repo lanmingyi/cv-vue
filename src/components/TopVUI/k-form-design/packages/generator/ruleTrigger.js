@@ -1,10 +1,10 @@
 /*** 
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 14:26:09
  * @LastEditTime: 2021-07-06 14:43:55
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\generator\ruleTrigger.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 /**
  * 用于生成表单校验，指定正则规则的触发方式。

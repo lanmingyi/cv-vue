@@ -1,10 +1,10 @@
 <!--
  * @Description: 错误页面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-15 11:50:20
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\exception\ExceptionPage.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div :class="['exception-page', { mobile: isMobile }]">

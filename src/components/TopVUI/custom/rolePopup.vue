@@ -1,10 +1,10 @@
 <!--
  * @Description: 角色权限
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-15 10:42:57
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\rolePopup.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<t-modal title="角色权限" :width="800" :visible="visible" switchFullscreen wrapClassName="t-popup-modal"

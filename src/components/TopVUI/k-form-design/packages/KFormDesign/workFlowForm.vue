@@ -1,10 +1,10 @@
 <!--
  * @Description: 流程表单设计界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-17 11:13:42
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormDesign\workFlowForm.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-config-provider :locale="locale">
@@ -149,7 +149,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  * description 表单设计器
  */

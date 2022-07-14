@@ -1,10 +1,10 @@
 <!--
  * @Description: 折线图
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-09-16 11:11:33
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\component\lineChart.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-card :hoverable="true">

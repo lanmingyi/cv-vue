@@ -1,10 +1,10 @@
 <!--
  * @Description: 行省略
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-04-27 17:02:50
  * @LastEditTime: 2021-05-21 14:26:57
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\custom\TEllipsis.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<a-tooltip placement="topLeft">

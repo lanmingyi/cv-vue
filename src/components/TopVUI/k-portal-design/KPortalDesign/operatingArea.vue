@@ -1,10 +1,10 @@
 <!--
  * @Description: 头部操作按钮
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-05-21 13:58:08
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\k-portal-design\component\operatingArea.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="operating-area">

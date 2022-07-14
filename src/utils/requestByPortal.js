@@ -1,10 +1,10 @@
 /*** 
  * @Description: 门户request请求
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-23 17:18:26
  * @LastEditTime: 2021-09-15 09:42:28
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\utils\requestByPortal.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import axios from 'axios';
 import { message } from 'ant-design-vue';

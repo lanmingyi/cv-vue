@@ -1,10 +1,10 @@
 <!--
  * @Description: 表单设计布局组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:47:44
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormBuild\buildBlocks.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <!-- 标签页布局 -->
@@ -172,7 +172,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  */
 import KFormItem from "../KFormItem/index";

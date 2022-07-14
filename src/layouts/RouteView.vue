@@ -1,10 +1,10 @@
 <!--
  * @Description: 路由视图
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-15 12:00:26
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\layouts\RouteView.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <!-- <template>
 	<div>

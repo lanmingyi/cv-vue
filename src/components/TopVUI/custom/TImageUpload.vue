@@ -1,10 +1,10 @@
 <!--
  * @Description: 图片上传
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-08-18 16:59:03
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TImageUpload.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-upload

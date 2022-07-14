@@ -1,8 +1,8 @@
 <!--
  * @Description: 表单设计器内容展示操作组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2019-12-31 19:39:48
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-09-15 17:50:09
  -->
 <template>

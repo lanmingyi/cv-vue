@@ -1,9 +1,9 @@
 /*** 
  * @Description: 门户设计mock数据
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-23 17:22:50
  * @LastEditTime: 2021-09-01 14:44:57
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\mock\controller\portal.js
  */
 const Mock = require('mockjs')

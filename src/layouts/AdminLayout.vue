@@ -1,10 +1,10 @@
 <!--
  * @Description: 后台管理布局
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-17 11:10:33
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\layouts\AdminLayout.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-layout :class="['admin-layout', 'beauty-scroll', { mobile: isMobile }]">

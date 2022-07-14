@@ -1,9 +1,9 @@
 <!--
  * @Description: 门户拖拽设计
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-21 17:19:40
  * @LastEditTime: 2021-05-21 19:03:28
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \misboot-cloud-topvui\src\pages\system\sysPortalTemplate\previewModal.vue
 -->
 <template>

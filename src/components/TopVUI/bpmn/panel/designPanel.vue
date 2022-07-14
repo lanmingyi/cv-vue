@@ -1,10 +1,10 @@
 <!--
  * @Description: 设计界面右侧配置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-09-16 09:20:42
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\designPanel.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="bpmn-panel">

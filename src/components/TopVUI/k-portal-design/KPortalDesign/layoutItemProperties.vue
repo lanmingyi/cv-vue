@@ -1,10 +1,10 @@
 <!--
  * @Description: 控件属性设置组件,因为配置数据是引用关系，所以可以直接修改/管理员界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-09-09 10:52:21
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\KPortalDesign\layoutItemProperties.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="properties-centent kk-checkbox">

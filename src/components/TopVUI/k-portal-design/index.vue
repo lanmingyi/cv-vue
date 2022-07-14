@@ -1,10 +1,10 @@
 <!--
  * @Description: 门户拖拽页设计/管理员界面
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-09-16 11:14:34
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <a-config-provider :locale="locale">

@@ -1,10 +1,10 @@
 <!--
  * @Description: 外置表单列表页
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-08-17 11:57:15
  * @LastEditTime: 2021-09-02 17:23:57
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\modal\externalForm.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<t-modal title="外置表单" :width="1200" :visible="visible" :confirmLoading="loading" @ok="handleOk" @cancel="

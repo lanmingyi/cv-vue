@@ -1,10 +1,10 @@
 <!--
  * @Description: 可拖拽窗口，暂未使用
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-19 11:37:58
  * @LastEditTime: 2021-05-21 14:23:06
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\custom\DragerModal\DragerModal.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<a-modal

@@ -1,10 +1,10 @@
 /*** 
  * @Description: 门户页面mock数据
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:09
  * @LastEditTime: 2021-09-15 09:52:29
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\services\dashboard.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 import request from '@/utils/mock.js'
 import qs from 'qs'

@@ -1,10 +1,10 @@
 <!--
  * @Description: 外置表单配置
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-11 16:02:32
  * @LastEditTime: 2021-09-16 09:32:26
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\bpmn\panel\formWritePanel.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

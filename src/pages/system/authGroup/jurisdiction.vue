@@ -1,9 +1,9 @@
 <!--
  * @Description: 页面授权
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-25 10:23:15
  * @LastEditTime: 2021-06-01 15:52:38
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \misboot-cloud-topvui\src\pages\system\authGroup\jurisdiction.vue
 -->
 <template>

@@ -1,10 +1,10 @@
 /*** 
  * @Description: 表单组件代码生成工具  
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 15:29:47
  * @LastEditTime: 2021-08-26 17:41:30
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\generator\utils.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable no-restricted-syntax */

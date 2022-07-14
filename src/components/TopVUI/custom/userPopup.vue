@@ -1,10 +1,10 @@
 <!--
  * @Description: 用户
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-08-31 11:23:37
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\userPopup.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<t-modal title="用户信息" :width="1000" :visible="visible" switchFullscreen wrapClassName="t-popup-modal"

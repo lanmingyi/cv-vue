@@ -1,10 +1,10 @@
 <!--
  * @Description: 附件上传
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-09-08 18:30:04
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\webupload.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <t-modal

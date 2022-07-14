@@ -1,9 +1,9 @@
 <!--
  * @Description: 钉钉账号绑定结果页
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-07 09:27:28
  * @LastEditTime: 2021-09-18 11:46:29
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\user\dingTalkBack.vue
 -->
 <template>

@@ -1,8 +1,8 @@
 <!--
  * @Description: 传入record数据，通过判断record.type，来渲染对应的组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2020-01-02 22:41:48
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @LastEditTime: 2021-09-14 09:17:13
  -->
 <template>
@@ -770,7 +770,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  */
 // import moment from "moment";

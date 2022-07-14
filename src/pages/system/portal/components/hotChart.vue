@@ -1,9 +1,9 @@
 <!--
  * @Description: 
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:09
  * @LastEditTime: 2021-06-07 13:37:34
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vue-antd-admine:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\system\portal\components\hotChart.vue
 -->
 <template>

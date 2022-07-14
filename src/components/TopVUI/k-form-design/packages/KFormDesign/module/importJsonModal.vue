@@ -1,10 +1,10 @@
 <!--
  * @Description: 导入
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-07-06 15:13:16
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\KFormDesign\module\importJsonModal.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<a-modal
@@ -29,7 +29,7 @@
 </template>
 <script>
 /*
- * author 黄婷
+ * author lmy
  * date 2019-11-20
  * description 导入json Modal
  */

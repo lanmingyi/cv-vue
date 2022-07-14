@@ -1,10 +1,10 @@
 <!--
  * @Description: 富文本编辑器  wangEditor
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-04-09 13:29:15
  * @LastEditTime: 2021-09-02 17:41:16
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\Editor\index.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div class="wangeditor-12566">

@@ -1,9 +1,9 @@
 <!--
  * @Description: 钉钉登录
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-09 18:17:16
  * @LastEditTime: 2021-09-18 11:46:58
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\user\DingtalkLogin.vue
 -->
 

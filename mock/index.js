@@ -1,9 +1,9 @@
 /*** 
  * @Description: mock服务
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:06
  * @LastEditTime: 2021-09-09 15:50:58
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\mock\index.js
  */
 const Mock = require('mockjs');

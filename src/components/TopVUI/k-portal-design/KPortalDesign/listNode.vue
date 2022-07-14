@@ -1,10 +1,10 @@
 <!--
  * @Description: 将数据通过listItem组件解析，生成控件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-05-20 18:13:04
  * @LastEditTime: 2021-07-21 15:18:43
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-portal-design\KPortalDesign\listNode.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div

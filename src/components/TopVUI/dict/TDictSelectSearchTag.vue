@@ -1,10 +1,10 @@
 <!--
  * @Description: 数据字典单选组件
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-02 13:38:08
  * @LastEditTime: 2021-09-16 10:42:31
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\dict\TDictSelectTag.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<!-- 单选 -->

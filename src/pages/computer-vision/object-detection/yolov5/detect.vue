@@ -187,14 +187,14 @@ export default{
     },
 
 
-    loadModel() {
+    async loadModel() {
       if (this.weights === '')
       {
         this.$message.warn('请先选择模型', 1.5)
         return
       }
       this.spinning = true
-      tf.loadGraphModel(this.weights).then(model => {
+      await tf.loadGraphModel(this.weights).then(model => {
         console.log('model', model)
         this.model= model
 

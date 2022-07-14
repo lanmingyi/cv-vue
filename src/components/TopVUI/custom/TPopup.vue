@@ -1,10 +1,10 @@
 <!--
  * @Description: 人员选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-05-21 14:28:14
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\custom\TPopup.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <div>

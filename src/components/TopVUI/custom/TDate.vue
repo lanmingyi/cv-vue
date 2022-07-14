@@ -1,10 +1,10 @@
 <!--
  * @Description: 日期时间选择器
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:26
  * @LastEditTime: 2021-09-15 10:43:47
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\custom\TDate.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <!-- 日期 -->

@@ -1,10 +1,10 @@
 <!--
  * @Description: 企业微信登录
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-04 14:43:58
  * @LastEditTime: 2021-09-16 09:58:55
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\layouts\header\EnterpriseDingding.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <t-modal

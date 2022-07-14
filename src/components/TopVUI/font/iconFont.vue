@@ -1,10 +1,10 @@
 <!--
  * @Description: 阿里图标  https加载方式
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-04-16 19:01:34
  * @LastEditTime: 2021-09-18 15:52:04
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\font\iconFont.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
   <icon-font

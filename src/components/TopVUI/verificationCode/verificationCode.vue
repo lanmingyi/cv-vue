@@ -1,10 +1,10 @@
 <!--
  * @Description: 验证码画布
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-01-18 15:17:27
  * @LastEditTime: 2021-05-21 14:12:43
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\verificationCode\verificationCode.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div class="s-canvas"><canvas id="s-canvas" :width="contentWidth" :height="contentHeight"></canvas></div>

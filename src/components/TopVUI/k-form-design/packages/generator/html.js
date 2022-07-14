@@ -1,10 +1,10 @@
 /*** 
  * @Description: 表单设计HTML代码生成函数
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 14:41:16
  * @LastEditTime: 2021-08-27 11:01:57
- * @LastEditors: 黄婷
- * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\generator\html.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 let confGlobal
 let someSpanIsNot24

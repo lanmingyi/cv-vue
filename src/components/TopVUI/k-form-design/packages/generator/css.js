@@ -1,10 +1,10 @@
 /*** 
  * @Description:  表单设计css代码生成函数
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-06 14:41:16
  * @LastEditTime: 2021-07-19 09:21:55
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-vue\src\components\TopVUI\k-form-design\packages\generator\css.js
+ * @LastEditors: lmy
+ * @FilePath:
  */
 const styles = {
     'a-rate': '.a-rate{display: inline-block; vertical-align: text-top;}',

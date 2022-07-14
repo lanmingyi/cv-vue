@@ -1,10 +1,10 @@
 <!--
  * @Description: 用户选择
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-03-23 09:58:27
  * @LastEditTime: 2021-05-21 14:29:52
- * @LastEditors: 黄婷
- * @FilePath: \misboot-cloud-topvui\src\components\TopVUI\custom\TSelectUser.vue
+ * @LastEditors: lmy
+ * @FilePath:
 -->
 <template>
 	<div>

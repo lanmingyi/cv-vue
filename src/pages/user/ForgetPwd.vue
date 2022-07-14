@@ -1,9 +1,9 @@
 <!--
  * @Description: 忘记密码
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-06-09 18:21:19
  * @LastEditTime: 2021-09-18 11:47:25
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\user\ForgetPwd.vue
 -->
 <template>

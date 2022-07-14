@@ -1,9 +1,9 @@
 <!--
  * @Description:移动在线开发
- * @Author: 黄婷
+ * @Author: lmy
  * @Date: 2021-07-08 16:34:28
  * @LastEditTime: 2021-08-06 09:25:19
- * @LastEditors: 黄婷
+ * @LastEditors: lmy
  * @FilePath: \vite-demoe:\wwwroot\Vue\MisBoot\misboot-cloud-vue\src\pages\system\sysAppBasics\index.vue
 -->
 <template>
